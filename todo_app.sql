@@ -2,7 +2,7 @@
 DROP ROLE IF EXISTS michael;
 
 -- 2
-
+CREATE ROLE michael WITH ENCRYPTED PASSWORD 'stonebreaker';
 
 -- 3
 DROP DATABASE IF EXISTS todo_app;
