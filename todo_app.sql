@@ -15,7 +15,6 @@ CREATE DATABASE todo_app;
 
 -- 6
 CREATE TABLE tasks (
-    /*id INTEGER NOT NULL,*/
     id SERIAL,
     title varchar(255) NOT NULL,
     description text NULL,
@@ -35,11 +34,8 @@ ALTER TABLE tasks DROP COLUMN completed;
 ALTER TABLE tasks ADD COLUMN completed_at timestamp NULL DEFAULT NULL;
 
   --iii
-/*ALTER TABLE tasks ALTER COLUMN updated_at SET NOT NULL, DEFAULT now();*/
 ALTER TABLE tasks ALTER COLUMN updated_at SET NOT NULL;
 ALTER TABLE tasks ALTER COLUMN updated_at SET DEFAULT now();
-
-
 
   --iv
 INSERT INTO tasks (id, title, description, created_at, updated_at, completed_at)
