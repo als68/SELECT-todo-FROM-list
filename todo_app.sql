@@ -24,6 +24,7 @@ CREATE TABLE tasks (
   );
 
 -- 7
+ALTER TABLE tasks ADD PRIMARY KEY(id);
 
 -- 8
 
