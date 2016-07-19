@@ -14,6 +14,14 @@ CREATE DATABASE todo_app;
 \c todo_app;
 
 -- 6
+CREATE TABLE tasks (
+    id,
+    title,
+    description,
+    created_at,
+    updated_at,
+    completed
+  );
 
 -- 7
 
